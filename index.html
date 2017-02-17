@@ -1,0 +1,3063 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link href="css/JDCSS.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/JDJS.js"></script>
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/lrtk.css" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".side ul li").hover(function() {
+					$(this).find(".sidebox").stop().animate({
+						"width": "100px"
+					}, 300).css({
+						"opacity": "1",
+						"filter": "Alpha(opacity=100)",
+						"background": "#ae1c1c"
+					})
+				}, function() {
+					$(this).find(".sidebox").stop().animate({
+						"width": "30px"
+					}, 300).css({
+						"opacity": "0.8",
+						"filter": "Alpha(opacity=80)",
+						"background": "#000"
+					})
+				});
+
+			});
+			//回到顶部
+			function goTop() {
+				$('html,body').animate({
+					'scrollTop': 0
+				}, 600); //滚回顶部的时间，越小滚的速度越快~
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--客服服务-->
+		<div class="side">
+			<ul>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon01.jpg">京东会员</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon02.jpg">购物车</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon03.jpg">我的关注</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon04.jpg">我的足迹</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon05.jpg">我的消息</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon06.jpg">咨询JIMI</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon08.jpg">新浪微博</div>
+					</a>
+				</li>
+				<li style="border:none;">
+					<a href="javascript:goTop();" class="sidetop"><img src="img/right_celan_img/side_icon07.jpg"></a>
+				</li>
+				
+			</ul>
+		</div>
+		
+		
+		<div class="top">
+			<div class="top_w">
+				<ul>
+					<li class="top_w_li">
+						<div class="top_adress" id="top_adress">
+							<span class="top_adress_span">送至：北京</span>
+							
+						</div>
+						<div class="top_adress_list" id="top_adress_list" style="border: 1px solid #DDDDDD">
+							<span style="margin-left: 5px;"><a href="#">北京</a></span><span><a href="#">上海</a></span><span><a href="#">天津</a></span><span><a href="#">重庆</a></span><span><a href="#">河北</a></span><br />
+							<span style="margin-left: 5px;"><a href="#">山西</a></span><span><a href="#">河南</a></span><span><a href="#">辽宁</a></span><span><a href="#">吉林</a></span><span><a href="#">黑龙江</a></span><br />
+							<span style="margin-left: 5px;"><a href="#">江苏</a></span><span><a href="#">山东</a></span><span><a href="#">安徽</a></span><span><a href="#">浙江</a></span><span><a href="#">内蒙古</a></span><br />
+							<span style="margin-left: 5px;"><a href="#">福建</a></span><span><a href="#">湖北</a></span><span><a href="#">湖南</a></span><span><a href="#">广东</a></span><span><a href="#">广西</a></span><br />
+							<span style="margin-left: 5px;"><a href="#">江西</a></span><span><a href="#">四川</a></span><span><a href="#">海南</a></span><span><a href="#">贵州</a></span><span><a href="#">云南</a></span><br />
+							<span style="margin-left: 5px;"><a href="#">西藏</a></span><span><a href="#">陕西</a></span><span><a href="#">甘肃</a></span><span><a href="#">青海</a></span><span><a href="#">宁夏</a></span><br />
+							<span style="margin-left: 5px;"><a href="#">新疆</a></span><span><a href="#">台湾</a></span><span><a href="#">香港</a></span><span><a href="#">澳门</a></span><span><a href="#">钓鱼岛</a></span><br />
+							<span style="margin-left: 5px;"><a href="#">海外</a></span>
+						</div>
+						<script type="text/javascript">
+							var top_adress = document.getElementById("top_adress");
+							var top_adress_list = document.getElementById("top_adress_list");
+
+							top_adress.onmouseover = function() {
+								top_adress_list.style.display = "block";
+							}
+							top_adress_list.onmouseover = function() {
+								top_adress_list.style.display = "block";
+							}
+							top_adress.onmouseout = function() {
+								top_adress_list.style.display = "none";
+							}
+							top_adress_list.onmouseout = function() {
+								top_adress_list.style.display = "none";
+							}
+						</script>
+					</li>
+				</ul>
+
+				<div class="span"></div>
+
+				<ul class="top_w_ul">
+					<li>
+						<a href="#">您好，请登录</a>
+					</li>
+					<li>
+						<a href="#">免费注册</a>
+					</li>
+					<span>|</span>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<span>|</span>
+					<div id="myJDlist" style="height: 30px; display: inline-block;">
+						<a id="myJDlist_a" href="#" style="color: #666666; font-size: 13px;text-decoration: none;">我的京东</a></div>
+					<span>|</span>
+					<li>
+						<a href="#">京东会员</a>
+					</li>
+					<span>|</span>
+					<li>
+						<a href="#">企业采购</a>
+					</li>
+					<span>|</span>
+					<div id="mobile" style="height: 30px;display: inline-block;">
+						<span class="mobile_span_img"></span>
+						<a href="#" id="mobileJD_red" style="color: #666666; font-size: 13px;text-decoration: none;">手机京东</a>
+						
+					</div>
+					<span>|</span>
+					<div id="watchJD" style="height: 30px;display: inline-block;">
+						<a id="watchJD_a" href="#" style="color: #666666; font-size: 13px;text-decoration: none;">关注京东</a>
+						
+					</div>
+					<span>|</span>
+					<div id="service" style="height: 30px;display: inline-block;">
+						<a id="service_a" href="#" style="color: #666666; font-size: 13px;text-decoration: none;">客服服务</a>
+						
+					</div>
+					<span>|</span>
+
+				</ul>
+				
+				<script type="text/javascript">
+					var myJDlist = document.getElementById("myJDlist");
+					var myJD = document.getElementById("myJD");
+					var myJDlist_a = document.getElementById("myJDlist_a");
+					myJDlist_a.onmouseover = function() {
+						myJDlist_a.style.color = "#C81623";
+					}
+					myJDlist_a.onmouseout = function() {
+						myJDlist_a.style.color = "#666666";
+					}
+					myJDlist.onmouseover = function() {
+						myJD.style.display = "block";
+						myJDlist.style.backgroundColor = "#FFFFFF"
+					}
+					myJD.onmouseover = function() {
+						myJD.style.display = "block";
+						myJDlist.style.backgroundColor = "#FFFFFF"
+					}
+					myJDlist.onmouseout = function() {
+						myJD.style.display = "none";
+						myJDlist.style.backgroundColor = "#F1F1F1"
+					}
+					myJD.onmouseout = function() {
+						myJD.style.display = "none";
+						myJDlist.style.backgroundColor = "#F1F1F1"
+					}
+				</script>
+			
+				<script type="text/javascript">
+					var mobile = document.getElementById("mobile");
+					var mobile_list = document.getElementById("mobile_list");
+					var mobile_red = document.getElementById("mobile_red");
+					var mobileJD_red = document.getElementById("mobileJD_red");
+					mobile.onmouseover = function() {
+						mobile_list.style.display = "block";
+						mobile_red.style.zIndex = "5";
+						mobileJD_red.style.color = "#C81623"
+					}
+					mobile_list.onmouseover = function() {
+						mobile_list.style.display = "block";
+						mobile_red.style.zIndex = "5";
+					}
+					mobile.onmouseout = function() {
+						mobile_list.style.display = "none";
+						mobile_red.style.zIndex = "1";
+						mobileJD_red.style.color = "#666666"
+					}
+					mobile_list.onmouseout = function() {
+						mobile_list.style.display = "none";
+						mobile_red.style.zIndex = "1";
+					}
+				</script>
+				
+				<script type="text/javascript">
+					var watchJD = document.getElementById("watchJD");
+					var watchJD_list = document.getElementById("watchJD_list");
+					var watchJD_a = document.getElementById("watchJD_a");
+					watchJD.onmouseover = function() {
+						watchJD_list.style.display = "block";
+						watchJD_a.style.color = "#C81623";
+					}
+					watchJD_list.onmouseover = function() {
+						watchJD_list.style.display = "block";
+					}
+					watchJD.onmouseout = function() {
+						watchJD_list.style.display = "none";
+						watchJD_a.style.color = "#666666";
+					}
+					watchJD_list.onmouseout = function() {
+						watchJD_list.style.display = "none";
+					}
+				</script>
+			
+				<script type="text/javascript">
+					var service = document.getElementById("service");
+					var service_list = document.getElementById("service_list");
+					var service_a = document.getElementById("service_a");
+					service.onmouseover = function() {
+						service_list.style.display = "block";
+						service_a.style.color = "#C81623"
+					}
+					service_list.onmouseover = function() {
+						service_list.style.display = "block";
+					}
+					service.onmouseout = function() {
+						service_list.style.display = "none";
+						service_a.style.color = "#666666"
+					}
+					service_list.onmouseout = function() {
+						service_list.style.display = "none";
+					}
+				</script>
+			</div>
+
+		</div>
+		<div class="header">
+			<div class="header_img">
+				<a href="#"><img src="img/JDlogo.png" /></a>
+			</div>
+			<div class="search_top">
+				<input type="text" placeholder="请输入要搜索的信息" style="padding-left: 10px; outline: none; height: 35px;width: 450px;float: left;border: none;border:2px solid #C81623" />
+				<input type="button" value="搜索" style="outline: none; width: 76px;height: 39px;float: left;background-color: #C81623;border: none;color: white;font-size: 16px;" />
+				<span><a href="#" style="color: #C81623;">199减100</a></span>
+				<span><a href="#">手机专场</a></span>
+				<span><a href="#">199减50</a></span>
+				<span><a href="#">沸腾家电</a></span>
+				<span><a href="#">尖货榜单</a></span>
+				<span><a href="#">外套</a></span>
+				<span><a href="#">中秋礼品</a></span>
+				<span><a href="#">新品首发</a></span>
+				<span><a href="#">棉拖鞋</a></span>
+			</div>
+			<div class="shop_car" id="shop_car">
+				<img src="img/shop_car.png" style="margin-left: 10px;margin-top: 8px; float: left;" />
+				<span><a id="shop_car_a" href="#" style="text-decoration: none;color: #666666;font-size: 14px;margin-left: 5px; float: left;line-height: 35px;">我的购物车</a></span>
+				<span style="float: left;line-height: 35px;margin-left: 6px;">></span>
+			</div>
+			<div class="shop_car_list" id="shop_car_list">
+				
+				
+			</div>
+			<script type="text/javascript">
+				
+				var shop_car_a = document.getElementById("shop_car_a");
+		
+				shop_car_a.onmouseover = function() {
+					shop_car_a.style.color = "#C81623";
+				}
+				shop_car_a.onmouseout = function() {
+					shop_car_a.style.color = "#666666";
+				}
+			</script>
+
+		</div>
+		<div class="nav">
+			<div class="nav_content">
+				<div class="nav_div_01">
+					<a href="#" style="text-decoration: none;color: white;font-size: 20px;line-height: 45px;margin-left: 10px;">全部商品分类</a>
+				</div>
+				<div class="nav_div_02">
+					<span><a href="#">服装城</a></span>
+					<span><a href="#">美妆馆</a></span>
+					<span><a href="#">京东超市</a></span>
+					<span><a href="#">生鲜</a></span>
+					<span><a href="#">全球购</a></span>
+					<span><a href="#">闪购</a></span>
+					<span><a href="#">团购</a></span>
+					<span><a href="#">拍卖</a></span>
+					<span><a href="#">金融</a></span>
+				</div>
+				<script type="text/javascript" src="jquery-1.10.2.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						// Create two variable with the names of the months and days in an array
+						var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+						var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+						// Create a newDate() object
+						var newDate = new Date();
+						// Extract the current date from Date object
+						newDate.setDate(newDate.getDate());
+						// Output the day, date, month and year    
+						$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+						setInterval(function() {
+							// Create a newDate() object and extract the seconds of the current time on the visitor's
+							var seconds = new Date().getSeconds();
+							// Add a leading zero to seconds value
+							$("#sec").html((seconds < 10 ? "0" : "") + seconds);
+						}, 1000);
+
+						setInterval(function() {
+							// Create a newDate() object and extract the minutes of the current time on the visitor's
+							var minutes = new Date().getMinutes();
+							// Add a leading zero to the minutes value
+							$("#min").html((minutes < 10 ? "0" : "") + minutes);
+						}, 1000);
+
+						setInterval(function() {
+							// Create a newDate() object and extract the hours of the current time on the visitor's
+							var hours = new Date().getHours();
+							// Add a leading zero to the hours value
+							$("#hours").html((hours < 10 ? "0" : "") + hours);
+						}, 1000);
+
+					});
+				</script>
+
+				<div class="clock">
+					<div id="Date"></div>
+					<ul class="Date_ul">
+						<li class="Date_ul_li" id="hours"> </li>
+						<li class="Date_ul_li" id="point">:</li>
+						<li class="Date_ul_li" id="min"> </li>
+						<li class="Date_ul_li" id="point">:</li>
+						<li class="Date_ul_li" id="sec"> </li>
+					</ul>
+				</div>
+				<script type="text/javascript" src="js/JDJS.js"></script>
+
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="main">
+			<div class="left">
+				<ul class="left_ul" id="left_ul">
+					<li id="li_01">
+						<a id="a_01" href="#">家用电器</a>
+						<div class="left_menu">
+							<div class="left_menu_left" id="left_menu_left">
+
+								<dl>
+									<dt><a href="#">电视 ></a></dt>
+									<dd>
+										<a href="#">合资品牌</a>
+										<a href="#">国产品牌</a>
+										<a href="#">互联网品牌</a>
+									</dd>
+
+									<dt><a href="#">空调 ></a></dt>
+									<dd>
+										<a href="#" style="color:#666666;">壁挂式空调</a>
+										<a href="#">柜式空调</a>
+										<a href="#">中央空调</a>
+										<a href="#">空调配件</a>
+									</dd>
+									<dt><a href="#">洗衣机 ></a></dt>
+									<dd>
+										<a href="#">滚筒洗衣机</a>
+										<a href="#">洗烘洗衣机</a>
+										<a href="#">波轮洗衣机</a>
+										<a href="#">迷你洗衣机</a>
+										<a href="#">洗衣机配件</a>
+									</dd>
+									<dt><a href="#">冰箱 ></a></dt>
+									<dd>
+										<a href="#">多门</a>
+										<a href="#">对开门</a>
+										<a href="#">三门</a>
+										<a href="#">双门</a>
+										<a href="#">冷柜/冰吧</a>
+										<a href="#">酒柜</a>
+										<a href="#">冰箱配件</a>
+									</dd>
+
+									<dt><a href="#">厨卫大电 ></a></dt>
+									<dd>
+										<a href="#">油烟机</a>
+										<a href="#">燃气灶</a>
+										<a href="#">烟灶套装</a>
+										<a href="#">消毒柜</a>
+										<a href="#">洗碗机</a>
+										<a href="#">电热水壶</a>
+										<a href="#">燃气热水器</a>
+										<a href="#">嵌入式厨电</a>
+									</dd>
+
+									<dt><a href="#">厨房小电 ></a></dt>
+									<dd>
+										<a href="#">电饭煲</a>
+										<a href="#">微波炉</a>
+										<a href="#">电烤箱</a>
+										<a href="#">电磁炉</a>
+										<a href="#">电压力锅</a>
+										<a href="#">豆浆机</a>
+										<a href="#">咖啡机</a>
+										<a href="#">面包机</a>
+										<a href="#">榨汁机</a>
+										<a href="#">料理机</a>
+										<a href="#">电饼铛</a>
+										<a href="#">养生壶/煎药壶</a>
+										<a href="#">酸奶机</a>
+										<a href="#">煮蛋器</a>
+										<a href="#">电水壶/热水瓶</a>
+										<a href="#">电炖锅</a>
+										<a href="#">多用途锅</a>
+										<a href="#">电烧烤炉</a>
+										<a href="#">电热饭盒</a>
+										<a href="#">其他厨房电器</a>
+									</dd>
+									<dt><a href="#">生活电器 ></a></dt>
+									<dd>
+										<a href="#">取暖电器</a>
+										<a href="#">吸尘器</a>
+										<a href="#">净化器</a>
+										<a href="#">扫地机器人</a>
+										<a href="#">加湿器</a>
+										<a href="#">挂烫机/熨斗</a>
+										<a href="#">电风扇</a>
+										<a href="#">冷风扇</a>
+										<a href="#">插座</a>
+										<a href="#">电话机</a>
+										<a href="#">净水器</a>
+										<a href="#">饮水机</a>
+										<a href="#">除湿机</a>
+										<a href="#">干衣机</a>
+										<a href="#">清洁剂</a>
+										<a href="#">收/录音机</a>
+										<a href="#">其他生活电器</a>
+										<a href="#">其他电器配件</a>
+									</dd>
+									<dt><a href="#">个护健康 ></a></dt>
+									<dd>
+										<a href="#">剃须刀</a>
+										<a href="#">口腔护理</a>
+										<a href="#">电吹风</a>
+										<a href="#">美容器</a>
+										<a href="#">卷/直发器</a>
+										<a href="#">理发器</a>
+										<a href="#">剃/脱毛器</a>
+										<a href="#">足浴盆</a>
+										<a href="#">健康秤/厨房秤</a>
+										<a href="#">按摩器</a>
+										<a href="#">按摩椅</a>
+										<a href="#">计步器/脂肪检测仪</a>
+										<a href="#">其他健康电器</a>
+									</dd>
+									<dt><a href="#">家庭影音 ></a></dt>
+									<dd>
+										<a href="#">家庭影院</a>
+										<a href="#">迷你音响</a>
+										<a href="#">DVD</a>
+										<a href="#">电视影音配件</a>
+									</dd>
+									<dt><a href="#">进口电器 ></a></dt>
+									<dd>
+										<a href="#">进口电器</a>
+									</dd>
+
+								</dl>
+							</div>
+							<div class="left_menu_right"></div>
+						</div>
+						<!--<script type="text/javascript">
+						var left_menu_left=document.getElementById("left_menu_left");
+						var left_menu_left_a=left_menu_left.getElementsByTagName("a");
+						for(var i=0;i<left_menu_left_a.length;i++){
+							left_menu_left_a[i].style.color="#666666";
+						}
+						
+					</script>-->
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">手机、运营商、数码</a>
+						<div class="left_menu">
+							<div class="left_menu_left" id="left_menu_left">
+
+								<dl>
+									<dt><a href="#">电视 ></a></dt>
+									<dd>
+										<a href="#">合资品牌</a>
+										<a href="#">国产品牌</a>
+										<a href="#">互联网品牌</a>
+									</dd>
+
+									<dt><a href="#">空调 ></a></dt>
+									<dd>
+										<a href="#" style="color:#666666;">壁挂式空调</a>
+										<a href="#">柜式空调</a>
+										<a href="#">中央空调</a>
+										<a href="#">空调配件</a>
+									</dd>
+									<dt><a href="#">洗衣机 ></a></dt>
+									<dd>
+										<a href="#">滚筒洗衣机</a>
+										<a href="#">洗烘洗衣机</a>
+										<a href="#">波轮洗衣机</a>
+										<a href="#">迷你洗衣机</a>
+										<a href="#">洗衣机配件</a>
+									</dd>
+									<dt><a href="#">冰箱 ></a></dt>
+									<dd>
+										<a href="#">多门</a>
+										<a href="#">对开门</a>
+										<a href="#">三门</a>
+										<a href="#">双门</a>
+										<a href="#">冷柜/冰吧</a>
+										<a href="#">酒柜</a>
+										<a href="#">冰箱配件</a>
+									</dd>
+
+									<dt><a href="#">厨卫大电 ></a></dt>
+									<dd>
+										<a href="#">油烟机</a>
+										<a href="#">燃气灶</a>
+										<a href="#">烟灶套装</a>
+										<a href="#">消毒柜</a>
+										<a href="#">洗碗机</a>
+										<a href="#">电热水壶</a>
+										<a href="#">燃气热水器</a>
+										<a href="#">嵌入式厨电</a>
+									</dd>
+
+									<dt><a href="#">厨房小电 ></a></dt>
+									<dd>
+										<a href="#">电饭煲</a>
+										<a href="#">微波炉</a>
+										<a href="#">电烤箱</a>
+										<a href="#">电磁炉</a>
+										<a href="#">电压力锅</a>
+										<a href="#">豆浆机</a>
+										<a href="#">咖啡机</a>
+										<a href="#">面包机</a>
+										<a href="#">榨汁机</a>
+										<a href="#">料理机</a>
+										<a href="#">电饼铛</a>
+										<a href="#">养生壶/煎药壶</a>
+										<a href="#">酸奶机</a>
+										<a href="#">煮蛋器</a>
+										<a href="#">电水壶/热水瓶</a>
+										<a href="#">电炖锅</a>
+										<a href="#">多用途锅</a>
+										<a href="#">电烧烤炉</a>
+										<a href="#">电热饭盒</a>
+										<a href="#">其他厨房电器</a>
+									</dd>
+									<dt><a href="#">生活电器 ></a></dt>
+									<dd>
+										<a href="#">取暖电器</a>
+										<a href="#">吸尘器</a>
+										<a href="#">净化器</a>
+										<a href="#">扫地机器人</a>
+										<a href="#">加湿器</a>
+										<a href="#">挂烫机/熨斗</a>
+										<a href="#">电风扇</a>
+										<a href="#">冷风扇</a>
+										<a href="#">插座</a>
+										<a href="#">电话机</a>
+										<a href="#">净水器</a>
+										<a href="#">饮水机</a>
+										<a href="#">除湿机</a>
+										<a href="#">干衣机</a>
+										<a href="#">清洁剂</a>
+										<a href="#">收/录音机</a>
+										<a href="#">其他生活电器</a>
+										<a href="#">其他电器配件</a>
+									</dd>
+									<dt><a href="#">个护健康 ></a></dt>
+									<dd>
+										<a href="#">剃须刀</a>
+										<a href="#">口腔护理</a>
+										<a href="#">电吹风</a>
+										<a href="#">美容器</a>
+										<a href="#">卷/直发器</a>
+										<a href="#">理发器</a>
+										<a href="#">剃/脱毛器</a>
+										<a href="#">足浴盆</a>
+										<a href="#">健康秤/厨房秤</a>
+										<a href="#">按摩器</a>
+										<a href="#">按摩椅</a>
+										<a href="#">计步器/脂肪检测仪</a>
+										<a href="#">其他健康电器</a>
+									</dd>
+									<dt><a href="#">家庭影音 ></a></dt>
+									<dd>
+										<a href="#">家庭影院</a>
+										<a href="#">迷你音响</a>
+										<a href="#">DVD</a>
+										<a href="#">电视影音配件</a>
+									</dd>
+									<dt><a href="#">进口电器 ></a></dt>
+									<dd>
+										<a href="#">进口电器</a>
+									</dd>
+
+								</dl>
+							</div>
+							<div class="left_menu_right"></div>
+						</div>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">电脑、办公</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">家居、家具、家装、厨具</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">男装 、女装、童装、内衣</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">个护化妆、清洁用品、宠物</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">鞋靴、箱包、珠宝、奢侈品</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">运动、户外、钟表</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">汽车、汽车用品</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">母婴、玩具乐器</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">食品、酒类、生鲜、特产</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">医药保健</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">图书、音像、电子书</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">彩票、旅行、充值、票务</a>
+					</li>
+					<li id="li_01">
+						<a id="a_01" href="#">理财、众筹、白条、保险</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div id="container">
+				<div id="list" style="left: -730px;">
+					<img src="img/luobo_05.jpg" />
+					<img src="img/luobo_01.jpg" />
+					<img src="img/luobo_02.jpg" />
+					<img src="img/luobo_03.jpg" />
+					<img src="img/luobo_04.jpg" />
+					<img src="img/luobo_05.jpg" />
+					<img src="img/luobo_01.jpg" />
+				</div>
+				<div id="buttons">
+					<span index="1" class="on">1</span>
+					<span index="2" class="">2</span>
+					<span index="3" class="">3</span>
+					<span index="4" class="">4</span>
+					<span index="5" class="">5</span>
+				</div>
+				<a href="javascript:" id="next" class="arrow">></a>
+				<a href="javascript:" id="pre" class="arrow">
+					<</a>
+			</div>
+
+			<div class="right">
+				<div class="right_top">
+					<dl>
+						<dt>京东快报</dt>
+						<dd>
+							<a href="#">更多 ></a>
+						</dd>
+					</dl>
+					<span><a href="#" style="font-weight: bold;">[特惠]</a><a href="#">暴风VR电视 买多少送多少</a></span>
+					<span><a href="#" style="font-weight: bold;">[公告]</a><a href="#">因广州图书仓搬仓升级配送延迟</a></span>
+					<span><a href="#" style="font-weight: bold;">[特惠]</a><a href="#">【家电大促】抢百万无门槛红包</a></span>
+					<span><a href="#" style="font-weight: bold;">[公告]</a><a href="#">“放心肉” 就在京东生鲜</a></span>
+					<span><a href="#" style="font-weight: bold;">[特惠]</a><a href="#">每日享折扣 京东品质游</a></span>
+				</div>
+				<div class="right_main">
+					<img src="../images/portfolio-img11.jpg" style="width: 100%;"/>
+				</div>
+				<div class="right_bottom">
+					<img src="img/right_buttom_img.jpg" />
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_01.jpg" /></a>
+					<a></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_02.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_03.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_04.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_05.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_06.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_07.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_08.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_09.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_10.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_11.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_12.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_13.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_14.jpg" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="img/main_footer_15.jpg" /></a>
+				</div>
+
+			</div>
+			<!-- Swiper JS -->
+			<script src="js/swiper-3.3.1.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					effect: 'coverflow',
+					autoplay: 1500,
+					grabCursor: true,
+					centeredSlides: true,
+					slidesPerView: 'auto',
+					coverflow: {
+						rotate: 50,
+						stretch: 0,
+						depth: 100,
+						modifier: 1,
+
+						slideShadows: true,
+
+					}
+				});
+			</script>
+		</div>
+
+		<!--图片轮播的JavaScript-->
+		<script type="text/javascript">
+			window.onload = function() {
+				var container = document.getElementById("container");
+				var list = document.getElementById("list");
+				var buttons = document.getElementById("buttons").getElementsByTagName("span");
+				var next = document.getElementById("next");
+				var pre = document.getElementById("pre");
+				var index = 1;
+				var animmated = false;
+				var timer;
+
+				function animate(offset) {
+					animmated = true;
+					var newleft = parseInt(list.style.left) + offset;
+					var time = 300;
+					var interval = 10;
+					var speed = offset / (time / interval);
+
+					function go() {
+						if(speed < 0 && parseInt(list.style.left) > newleft || speed > 0 && parseInt(list.style.left) < newleft) {
+							list.style.left = parseInt(list.style.left) + speed + "px";
+							setTimeout(go, interval)
+						} else {
+							animmated = false;
+							list.style.left = newleft + "px";
+							if(newleft > -730) {
+								list.style.left = -3650 + "px";
+							}
+							if(newleft < -3650) {
+								list.style.left = -730 + "px";
+							}
+						}
+
+					}
+					go();
+				}
+
+				function play() {
+					timer = setInterval(function() {
+						next.onclick();
+					}, 2000);
+				}
+
+				function stop() {
+					clearInterval(timer);
+				}
+
+				function showButton() {
+					for(var i = 0; i < buttons.length; i++) {
+						if(buttons[i].className == "on") {
+							buttons[i].className = "";
+							break;
+						}
+					}
+					buttons[index - 1].className = "on";
+
+				}
+
+				next.onclick = function() {
+					if(index == 5) {
+						index = 1;
+					} else {
+						index += 1;
+					}
+					showButton();
+					if(!animmated) {
+						animate(-730);
+					}
+
+				}
+				pre.onclick = function() {
+					if(index == 1) {
+						index = 5;
+					} else {
+						index -= 1;
+					}
+					showButton();
+					if(!animmated) {
+						animate(730);
+					}
+
+				}
+				for(var i = 0; i < buttons.length; i++) {
+					buttons[i].onclick = function() {
+						if(this.className == "on") {
+							return;
+						}
+						var myIndex = parseInt(this.getAttribute("index"));
+						var offset = -730 * (myIndex - index);
+						index = myIndex;
+						showButton();
+						if(!animmated) {
+							animate(offset);
+						}
+
+					}
+
+				}
+				play();
+				container.onmouseover = stop;
+				container.onmouseout = play;
+
+			}
+		</script>
+
+		<!--猜你喜欢-->
+		<div class="guessLike_main">
+			<span style="display: block;font-family: '微软雅黑';font-size: 22px;float: left;">猜你喜欢</span>
+			<img src="img/guess_text.jpg" style="float: left;margin-left: 15px;margin-top: 6px;" />
+			<div class="clear"></div>
+			<div class="guessLike">
+				<div class="guessLike_left">
+					<img src="img/guessLike_left_img.png" />
+					<span>装饰车</span>
+					<span>小洁癖</span><br />
+					<span>有情调</span>
+					<span>凹造型</span>
+					<span>恋物癖</span>
+					<span>智能家居</span>
+
+				</div>
+				<div class="guessLike_right">
+					<!-- Swiper -->
+					<div class="swiper-container1" style="width:975px;height: 260px; float: left;position: relative; overflow: hidden;margin-top: 5px;margin-left: 15PX;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#"><img src="img/guessLike_right_img01.png" /></a>
+							</div>
+							<div class="swiper-slide" style="text-align: center;">
+								<a href="#"><img src="img/guessLike_right_img02.png" /></a>
+							</div>
+							<div class="swiper-slide" style="text-align: center;">
+								<a href="#"><img src="img/guessLike_right_img03.png" /></a>
+							</div>
+							<div class="swiper-slide" style="text-align: center;">
+								<a href="#"><img src="img/guessLike_right_img04.png" /></a>
+							</div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination" style=""></div>
+					</div>
+
+				</div>
+				<!-- Swiper JS -->
+
+			</div>
+
+		</div>
+		<script src="js/swiper-3.3.1.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container1', {
+				pagination: '.swiper-pagination',
+				direction: 'vertical',
+				slidesPerView: 1,
+				paginationClickable: true,
+				spaceBetween: 30,
+				autoplay: 3000,
+				mousewheelControl: true,
+			});
+		</script>
+
+		<!--京东品质生活-->
+		<div class="life">
+			<div class="life_top">
+				<span>京东•品质生活</span>
+			</div>
+			<div class="life_content">
+				<div class="life_content_left">
+					<a href="#"><img src="img/life_content_left_img.png" /></a>
+				</div>
+				<div class="life_content_main">
+					<span class="life_content_main_span"><a href="#">新东西</a></span>
+					<div class="swiper-container2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(img/life_content_main_img01.png)"></div>
+							<div class="swiper-slide" style="background-image:url(img/life_content_main_img02.png)"></div>
+							<div class="swiper-slide" style="background-image:url(img/life_content_main_img03.png)"></div>
+							<div class="swiper-slide" style="background-image:url(img/life_content_main_img04.png)"></div>
+							<div class="swiper-slide" style="background-image:url(img/life_content_main_img01.png)"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+
+					<!-- Swiper JS -->
+					<script src="js/swiper-3.3.1.min.js"></script>
+
+					<!-- Initialize Swiper -->
+					<script>
+						var swiper = new Swiper('.swiper-container2', {
+							pagination: '.swiper-pagination',
+							effect: 'cube',
+							grabCursor: true,
+							autoplay: 2000,
+
+							cube: {
+								shadow: true,
+								slideShadows: true,
+								shadowOffset: 20,
+								shadowScale: 0.94
+							}
+						});
+					</script>
+
+				</div>
+				<div class="life_content_right">
+					<a href="#">
+						<img src="img/life_content_right_img.png" />
+					</a>
+
+				</div>
+			</div>
+			<div class="life_footer">
+				<a href="#"><img src="img/life_footer_img01.jpg" /></a>
+				<a href="#"><img src="img/life_footer_img02.jpg" /></a>
+				<a href="#"><img src="img/life_footer_img03.jpg" /></a>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+		<!--一楼服装鞋包-->
+		<div class="Floor">
+			<div class="Floor_top" id="Floor_top">
+
+				<img src="img/Floor_top_img01.png" />
+				<a style="display: block;font-size: 24px;color: #666666;float: left;margin-left: 30px; margin-top: 15px;">服装鞋包</a>
+				<div class="Floor_top_title" id="Floor_top_title">
+					<span class="selected">大牌</span>
+					<span>男装</span>
+					<span>女装</span>
+					<span>鞋靴</span>
+					<span>箱包</span>
+					<span>内衣配饰</span>
+					<span>珠宝首饰</span>
+					<span>奢品礼品</span>
+					<span>奢华腕表</span>
+				</div>
+
+			</div>
+			<div class="Floor_left">
+				<a href="#"><img src="img/Floor_left_img01.jpg" /></a>
+				<div class="Floor_left_opacity"></div>
+				<div class="Floor_left_img">
+					<a href="#"><img src="img/Floor_left_div_img01.jpg" style="position: absolute;margin-top: -3px; margin-left: 1px;" /></a>
+				</div>
+			</div>
+			<div class="Floor_right" id="Floor_right">
+				<ul>
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="Floor_footer">
+				<span><a href="#"><img src="img/shangbiao01/shangbiao1.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao2.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao3.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao4.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao5.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao6.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao7.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao8.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao9.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao10.jpg"/></a></span>
+			</div>
+		</div>
+		<div class="clear"></div>
+	
+		<!--二楼服装鞋包-->
+		<div class="Floor">
+			<div class="Floor_top" id="Floor_top">
+
+				<img src="img/Floor_top_img01.png" />
+				<a style="display: block;font-size: 24px;color: #666666;float: left;margin-left: 30px; margin-top: 15px;">服装鞋包</a>
+				<div class="Floor_top_title" id="Floor_top_title">
+					<span class="selected">大牌</span>
+					<span>男装</span>
+					<span>女装</span>
+					<span>鞋靴</span>
+					<span>箱包</span>
+					<span>内衣配饰</span>
+					<span>珠宝首饰</span>
+					<span>奢品礼品</span>
+					<span>奢华腕表</span>
+				</div>
+
+			</div>
+			<div class="Floor_left">
+				<a href="#"><img src="img/Floor_left_img01.jpg" /></a>
+				<div class="Floor_left_opacity"></div>
+				<div class="Floor_left_img">
+					<a href="#"><img src="img/Floor_left_div_img01.jpg" style="position: absolute;margin-top: -3px; margin-left: 1px;" /></a>
+				</div>
+			</div>
+			<div class="Floor_right" id="Floor_right">
+				<ul>
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="Floor_footer">
+				<span><a href="#"><img src="img/shangbiao01/shangbiao1.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao2.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao3.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao4.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao5.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao6.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao7.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao8.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao9.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao10.jpg"/></a></span>
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+		<!--三楼服装鞋包-->
+		<div class="Floor">
+			<div class="Floor_top" id="Floor_top">
+
+				<img src="img/Floor_top_img01.png" />
+				<a style="display: block;font-size: 24px;color: #666666;float: left;margin-left: 30px; margin-top: 15px;">服装鞋包</a>
+				<div class="Floor_top_title" id="Floor_top_title">
+					<span class="selected">大牌</span>
+					<span>男装</span>
+					<span>女装</span>
+					<span>鞋靴</span>
+					<span>箱包</span>
+					<span>内衣配饰</span>
+					<span>珠宝首饰</span>
+					<span>奢品礼品</span>
+					<span>奢华腕表</span>
+				</div>
+
+			</div>
+			<div class="Floor_left">
+				<a href="#"><img src="img/Floor_left_img01.jpg" /></a>
+				<div class="Floor_left_opacity"></div>
+				<div class="Floor_left_img">
+					<a href="#"><img src="img/Floor_left_div_img01.jpg" style="position: absolute;margin-top: -3px; margin-left: 1px;" /></a>
+				</div>
+			</div>
+			<div class="Floor_right" id="Floor_right">
+				<ul>
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="Floor_footer">
+				<span><a href="#"><img src="img/shangbiao01/shangbiao1.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao2.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao3.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao4.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao5.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao6.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao7.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao8.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao9.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao10.jpg"/></a></span>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+
+		<!--四楼服装鞋包-->
+		<div class="Floor">
+			<div class="Floor_top" id="Floor_top">
+
+				<img src="img/Floor_top_img01.png" />
+				<a style="display: block;font-size: 24px;color: #666666;float: left;margin-left: 30px; margin-top: 15px;">服装鞋包</a>
+				<div class="Floor_top_title" id="Floor_top_title">
+					<span class="selected">大牌</span>
+					<span>男装</span>
+					<span>女装</span>
+					<span>鞋靴</span>
+					<span>箱包</span>
+					<span>内衣配饰</span>
+					<span>珠宝首饰</span>
+					<span>奢品礼品</span>
+					<span>奢华腕表</span>
+				</div>
+
+			</div>
+			<div class="Floor_left">
+				<a href="#"><img src="img/Floor_left_img01.jpg" /></a>
+				<div class="Floor_left_opacity"></div>
+				<div class="Floor_left_img">
+					<a href="#"><img src="img/Floor_left_div_img01.jpg" style="position: absolute;margin-top: -3px; margin-left: 1px;" /></a>
+				</div>
+			</div>
+			<div class="Floor_right" id="Floor_right">
+				<ul>
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+						<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung02.jpg"/>
+							<ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung05.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung06.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung10.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung01.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung03.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung04.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nanzhuang/nanzhaung09.jpg"/><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nanzhuang/nanzhaung07.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung08.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung11.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+								<a href="#"><img src="img/nanzhuang/nanzhaung12.jpg" /><ul>
+								<li>男士大衣</li>
+								<li>￥299.0</li>
+							</ul></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="hide">
+					<li>
+						<div class="Floor_right_content02">
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang01.jpg"/>
+							<ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul>
+							</a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang02.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang03.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang04.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang05.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang06.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang07.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<span><a href="#"><img src="img/nvzhaung/nvzhuang08.jpg"/><ul>
+								<li>女士风衣</li>
+								<li>￥299.0</li>
+							</ul></a></span>
+							<div class="Floor_right_content02_bottom">
+								<a href="#"><img src="img/nvzhaung/nvzhuang1.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang2.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang3.jpg" /></a>
+								<a href="#"><img src="img/nvzhaung/nvzhuang4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="Floor_footer">
+				<span><a href="#"><img src="img/shangbiao01/shangbiao1.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao2.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao3.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao4.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao5.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao6.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao7.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao8.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao9.jpg"/></a></span>
+				<span><a href="#"><img src="img/shangbiao01/shangbiao10.jpg"/></a></span>
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+		<script type="text/javascript">
+			$('#Floor_top_title span').mouseover(function() {
+
+				$(this).addClass("selected").siblings().removeClass();
+
+				$("#Floor_right > ul").eq($('#Floor_top_title span').index(this)).show().siblings().hide();
+
+			});
+		</script>
+
+	</body>
+
+</html>

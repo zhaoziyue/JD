@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.side {
+	position: fixed;
+	right: 15px;
+	top:30%;
+	width: 30px;
+	height: 300px;
+
+	z-index: 100;
+}
+
+.side ul li {
+	
+	width: 30px;
+	height: 30px;
+	float: left;
+	position: relative;
+	
+	
+	
+	
+}
+
+.side ul li .sidebox {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	right: 0;
+	
+	background: #000;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+	color: #fff;
+	font: 14px "微软雅黑";
+	line-height: 30px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.side ul li .sidetop {
+	
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	background: #000;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+	-moz-transition: width 0.3s;
+	/* Firefox 4 */
+	-webkit-transition: width 0.3s;
+	/* Safari 和 Chrome */
+	-o-transition: width 0.3s;
+	/* Opera */
+	transition: width 0.3s;
+}
+
+.side ul li .sidetop:hover {
+	background: #ae1c1c;
+	opacity: 1;
+	filter: Alpha(opacity=100);
+}
+
+.side ul li img {
+	
+	float: right;
+	width: 30px;
+	height: 30px;
+}

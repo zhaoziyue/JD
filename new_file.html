@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jQuery弹性抽屉式在线客服代码_懒人图库</title>
+		<link href="css/lrtk.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery-1.10.2.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".side ul li").hover(function() {
+					$(this).find(".sidebox").stop().animate({
+						"width": "100px"
+					}, 200).css({
+						"opacity": "1",
+						"filter": "Alpha(opacity=100)",
+						"background": "#ae1c1c"
+					})
+				}, function() {
+					$(this).find(".sidebox").stop().animate({
+						"width": "30px"
+					}, 200).css({
+						"opacity": "0.8",
+						"filter": "Alpha(opacity=80)",
+						"background": "#000"
+					})
+				});
+
+			});
+			//回到顶部
+			function goTop() {
+				$('html,body').animate({
+					'scrollTop': 0
+				}, 600); //滚回顶部的时间，越小滚的速度越快~
+			}
+		</script>
+	</head>
+
+	<body style="height:2000px;">
+		<!-- 代码 开始 -->
+		<div class="side">
+			<ul>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon01.jpg">京东会员</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon02.jpg">购物车</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon03.jpg">我的关注</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon04.jpg">我的足迹</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon05.jpg">我的消息</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon06.jpg">咨询JIMI</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<div class="sidebox"><img src="img/right_celan_img/side_icon08.jpg">新浪微博</div>
+					</a>
+				</li>
+				<li style="border:none;">
+					<a href="javascript:goTop();" class="sidetop"><img src="img/right_celan_img/side_icon07.jpg"></a>
+				</li>
+				
+			</ul>
+		</div>
+
+
+	
+	</body>
+
+</html>

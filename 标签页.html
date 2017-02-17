@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>标签页</title>
+		<style type="text/css">
+			.div {
+				width: 400px;
+				height: 200px;
+				border: 1px solid black;
+				margin: 0 auto;
+			}
+			
+			.div ul {
+				list-style: none;
+				position: relative;
+				text-align: center;
+			}
+			
+			.div ul li {
+				background: #C81623;
+				display: inline-block;
+				cursor: pointer;
+			}
+			
+			.li_div {
+				display: none;
+				position: absolute;
+			}
+			.div ul li:hover .li_div {
+				width: 200px;
+				height: 200px;
+				display: block;
+				border: 1px solid darkgray;
+				background: #A9A9A9;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="div">
+			<ul>
+				<li>列表1
+
+					<div class="li_div">
+
+						这是div里的内容
+
+					</div>
+				</li>
+
+				<li>列表2
+					<div class="li_div">
+
+						这是div里的内容
+
+					</div>
+				</li>
+				<li>列表3
+					<div class="li_div">
+
+						这是div里的内容
+
+					</div>
+				</li>
+				<li>列表4
+					<div class="li_div">
+
+						这是div里的内容
+
+					</div>
+				</li>
+				<li>列表5
+					<div class="li_div">
+
+						这是div里的内容
+
+					</div>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</body>
+
+</html>

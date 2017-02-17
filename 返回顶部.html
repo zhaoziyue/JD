@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>回到顶部Demo</title>
+		<style type="text/css">
+			#btn {
+				width: 40px;
+				height: 40px;
+				position: fixed;
+				left: 50%;
+				margin-left: 500px;
+				bottom: 30px;
+				background: url(img/1111.jpg) no-repeat left top;
+				display: none;
+			}
+			
+			#btn:hover {
+				background: url(img/1111.jpg) no-repeat left -50px;
+			}
+		</style>
+		<script type="text/javascript">
+			//页面加载完毕后触发
+			window.onload = function() {
+
+				var btn = document.getElementById("btn");
+				var timer = null;//定时器
+				var istop = true;
+				
+				//获取可视区域的大小
+				var clientHight=document.documentElement.clientHeight;
+
+
+                //页面中滚动条改变时触发
+				window.onscroll = function() {
+					var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+					if(osTop>clientHight){
+						btn.style.display="block";
+						
+					}else{
+						btn.style.display="none";
+					}
+					
+					
+					if(!istop) {
+						clearInterval(timer);
+
+					}
+					istop = false;
+
+				}
+				
+				//点击回到顶部是触发
+				btn.onclick = function() {
+					timer = setInterval(function() {
+						var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+						var ispeed = Math.floor(-osTop / 6);
+						document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+						istop = true;
+						if(osTop == 0) {
+							clearInterval(timer);
+						}
+
+					}, 30)
+
+				}
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="div">
+			<img src="img/aaaa.png" />
+			<img src="img/bbbb.png" />
+			<img src="img/aaaa.png" />
+			<img src="img/bbbb.png" />
+		</div>
+		<a href="javascript:;" id="btn"></a>
+	</body>
+
+</html>
